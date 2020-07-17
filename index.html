@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Viewport responsive (maxime y scalable para que no se haga zoom)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maxime-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <title>Mi WEB</title>
+    <!--Color de la aplicacion-->
+    <meta name="theme-color" content="#fb314e"/>
+    <!--Optimizacion para movil-->
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+
+    <!--Meta para dispositivos de Apple-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent"/>
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="apple-touch-startup-image" href="img/favicon.png">
+
+    <!--Configuracion general de la PWA-->
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-git.slim.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+                <nav class="contenedor">
+                    <a href="">Yanai Cabrera WEB</a>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <section id="inicio">
+        <h1>Desarrolladora WEB y Profesora</h1>
+    </section>
+    <section id="servicios" class="contenedor">
+        <h1>Servicios</h1>
+        <div id="services">
+            <div class="service">
+                <img src="img/1.png" alt="">
+                <p>Desarrollo WEB</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+            <div class="service">
+                <img src="img/2.png" alt="">
+                <p>Diseño WEB</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+            <div class="service">
+                <img src="img/p.png" alt="">
+                <p>Mentoría</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+        </div>
+    </section>
+    <section id="videos" class="contenedor">
+        <h1>Videos</h1>
+        <div id="videos-container">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OqsTtqR51Ac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span>Apple acaba de lanzar iOS 13.6 para iPhone. En este video os contamos todos sus cambios y novedades.</span>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pdLZpjXBFVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span>Gracias a Ming Chi Kuo, ya sabemos cuales serán los primeros ordenadores Mac en montar los nuevos procesadores de Apple (los Apple Silicon) con los que dejarán atrás Intel.</span>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h9esVwJS9K0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span>Si habéis instalado la beta de iOS 14 y queréis bajar a iOS 13, en este videos os mostramos como hacerlo de forma fácil y segura. Este método es valido para cualquier iPhone y también para iPad con iPadOS 14.</span>
+            </div>
+    </section>
+    <footer>
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <p>Contactame mediante mis redes sociales</p>
+            <ul>
+                <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

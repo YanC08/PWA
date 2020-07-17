@@ -1,0 +1,152 @@
+
+*{
+    margin: 0 auto;
+    font-family: 'Lato';
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-size: contain;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+nav>a{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #E23B5D;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: #888888;
+}
+nav li a:hover{
+    color: #E23B5D;
+}
+#inicio{
+    display: flex;
+    height: 300px;
+    font: 900 24px 'Lato';
+    background-color: #E23B5D;
+    color: white;
+    align-items: center;
+}
+#inicio h1{
+    width: 100%;
+    text-align: center;
+}
+#services, #videos-container{
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+}
+#servicios h1, #videos h1{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 1px;
+    padding: 50px 0 30px 0;
+    border-bottom: 0.5px solid hsla(348, 74%, 56%, 1);
+}
+#servicios .service, #videos .video{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+.service p{
+    font-weight: bolder;
+    margin: 20px 0 20px 0;
+}
+.service span, .video span{
+    text-align: justify;
+    color: #888888;
+}
+.video iframe{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+#contacto{
+    background-color: #47464e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#contacto h1{
+    padding: 30px 0 30px 0;
+    font-size: 30px;
+}
+#contacto ul{
+    display: flex;
+    text-align: center;
+    width: 10%;
+    padding: 0;
+}
+#contacto ul li{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 6px;
+}
+#contacto ul li:hover{
+    opacity: 0.8;
+    transform: scale(1.1,1.1);
+}
+/*@media all(todo tipo de pantalla) screen(solo en pantallas de PC) print(vista de impresion)*/
+@media all and (max-width:1000px){
+    .contenedor{
+        display: inline;
+    }
+    nav{
+        display: inline-block;
+        text-align: center;
+    }
+    nav>a{
+        width: 100%;
+        font-size: 18px;
+        margin-top: 10px;
+        padding-top: 20px;
+        display: block;
+    }
+    nav li a{
+        font-size: 10px;
+    }
+    #inicio h1{
+        margin: 0 40px;
+    }
+    #services, #videos-container{
+        display: inline-block;
+        margin: 30px 0;
+        text-align: center;
+    }
+    #servicios .service, #videos .video{
+        width: 90%;
+        margin-bottom: 30px;
+        
+    }
+}
